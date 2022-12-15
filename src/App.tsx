@@ -1,14 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { FC } from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
+import { Reviews } from './components/sections'
 
+const App: FC = () => {
   return (
-    <div className="App">
-      HY
-    </div>
+    <Reviews />
   )
 }
 
