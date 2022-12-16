@@ -1,12 +1,11 @@
 import { FC } from 'react'
 import { Anchor, Avatar, Card, Col, Image, Row, Typography } from 'antd'
 
-import {SvgIcon} from '../../../components'
+import {Paragraph, SvgIcon} from '../../../components'
 import { ArticlesProps } from '../articles-data'
 
 import './index.less'
 
-const { Paragraph } = Typography
 const { Link } = Anchor
 
 type ArticleCardProps = ArticlesProps & {
@@ -42,13 +41,13 @@ const ArticleCrad: FC<ArticleCardProps> = (
           className={'article-card'}
         />
         <Link href={''} title={title} className={'card-link'} />
-        <Paragraph className={'card-description'}>{description}</Paragraph>
+        <Paragraph text={description} />
 
         <Row align={'middle'}>
           <SvgIcon type={'clock'} />
-          <Paragraph className={'card-time-date-text'}>
+          <Typography.Paragraph className={'card-time-date-text'}>
             {timeToRead} min read | {releaseDate}
-          </Paragraph>
+          </Typography.Paragraph>
         </Row>
       </Card>
     </Col>

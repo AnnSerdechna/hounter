@@ -32,7 +32,7 @@ export const reviews: ReviewsProps[] = [
   {
     picture: House2,
     title: 'My house sold out fast!',
-    review: 'I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!',
+    review: 'I was finally able to ready-to-sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!',
     userName: 'Courtney Henry',
     userPosition: 'CEO Andarafish',
     userAvatar: Avatar2,

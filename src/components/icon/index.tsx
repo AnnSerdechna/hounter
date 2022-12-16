@@ -8,6 +8,11 @@ import { ReactComponent as Instagram } from './images/instagram.svg'
 import { ReactComponent as Star } from './images/star.svg'
 import { ReactComponent as Clock } from './images/clock.svg'
 
+import { ReactComponent as Bed } from './images/bed.svg'
+import { ReactComponent as Bath } from './images/bath.svg'
+import { ReactComponent as Car } from './images/car.svg'
+import { ReactComponent as Floors } from './images/floors.svg'
+
 export type IconTypes =
   | 'logo'
   | 'facebook'
@@ -15,6 +20,11 @@ export type IconTypes =
   | 'instagram'
   | 'star'
   | 'clock'
+  | 'bed'
+  | 'bath'
+  | 'car'
+  | 'floors'
+  | string
 
 const icons: {
   [key: string]: FC<SVGProps<SVGSVGElement>>
@@ -25,6 +35,10 @@ const icons: {
   instagram: Instagram,
   star: Star,
   clock: Clock,
+  bed: Bed,
+  car: Car,
+  bath: Bath,
+  floors: Floors,
 } as const
 
 type SvgIconProps = SVGProps<SVGSVGElement> & { type: IconTypes }

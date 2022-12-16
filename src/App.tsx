@@ -1,13 +1,13 @@
 import { FC } from 'react'
 
-import { Reviews } from './sections'
-import {Articles} from "./sections/articles";
+import {Reviews, Articles, ReadyToSell} from './sections'
 
 const App: FC = () => {
   return (
     <>
       <Reviews />
       <Articles />
+      <ReadyToSell />
     </>
   )
 }

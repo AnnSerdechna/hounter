@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Row, Col, Typography, Image, Anchor, List, Avatar, Card } from 'antd'
+import { Row, Col, List } from 'antd'
 
 import { SectionComponent, SectionTitleBlock } from '../../components'
 import { articlesData } from './articles-data'
