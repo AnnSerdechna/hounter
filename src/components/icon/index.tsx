@@ -6,6 +6,7 @@ import { ReactComponent as Twitter } from './images/twitter.svg'
 import { ReactComponent as Instagram } from './images/instagram.svg'
 
 import { ReactComponent as Star } from './images/star.svg'
+import { ReactComponent as Clock } from './images/clock.svg'
 
 export type IconTypes =
   | 'logo'
@@ -13,6 +14,7 @@ export type IconTypes =
   | 'twitter'
   | 'instagram'
   | 'star'
+  | 'clock'
 
 const icons: {
   [key: string]: FC<SVGProps<SVGSVGElement>>
@@ -22,6 +24,7 @@ const icons: {
   twitter: Twitter,
   instagram: Instagram,
   star: Star,
+  clock: Clock,
 } as const
 
 type SvgIconProps = SVGProps<SVGSVGElement> & { type: IconTypes }

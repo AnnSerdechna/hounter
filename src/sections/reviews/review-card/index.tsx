@@ -1,7 +1,7 @@
 import { FC, useState } from 'react'
 import { Avatar, Card, Col, Image, Row, Statistic, Typography } from 'antd'
 
-import {SvgIcon} from '../../../icon'
+import { SvgIcon } from '../../../components'
 import './index.less'
 
 const { Paragraph } = Typography
