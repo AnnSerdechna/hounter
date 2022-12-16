@@ -1,10 +1,8 @@
 import { FC, useState } from 'react'
-import { Avatar, Card, Col, Image, Row, Statistic, Typography } from 'antd'
+import { Avatar, Card, Col, Image, Row, Statistic } from 'antd'
 
-import {SvgIcon} from '../../../icon'
+import { Paragraph, SvgIcon } from '../../../components'
 import './index.less'
-
-const { Paragraph } = Typography
 
 type ReviewCardProps = {
   src: string
@@ -34,12 +32,7 @@ const ReviewCard: FC<ReviewCardProps> = ({ src, title, review, userName, userAva
             className={'review-card'}
             bordered={false}
           >
-            <Paragraph
-              className={'review-text'}
-              ellipsis={ellipsis ? { rows: 2, expandable: true, symbol: 'more' } : false}
-            >
-              {review}
-            </Paragraph>
+            <Paragraph text={review} />
             <Row justify={'space-between'} className={'card-meta-wrap'}>
               <Card.Meta
                 avatar={<Avatar src={userAvatar} />}

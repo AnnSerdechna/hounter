@@ -1,0 +1,53 @@
+@import '../../../index';
+
+.card {
+  &-link {
+    margin-bottom: 16px;
+    margin-top: 12px;
+
+    .ant-anchor-link-title {
+      font-family: 'Lexend', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 32px;
+      text-transform: capitalize;
+      color: #1B1C57 !important;
+    }
+  }
+
+  &-description {
+    margin-bottom: 16px !important;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #626687;
+    opacity: 0.75;
+  }
+
+  &-time-date-text {
+    margin-bottom: 0 !important;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #888B97;
+    text-indent: 12px;
+  }
+
+}
+
+.article-card {
+  .ant-card-meta-description {
+    font-family: 'Lexend', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 22px !important;
+    color: #3C4563 !important;
+  }
+}
+
+:where(.css-dev-only-do-not-override-1i536d8).ant-card .ant-card-meta {
+  align-items: center;
+}
+

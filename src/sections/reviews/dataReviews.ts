@@ -1,13 +1,13 @@
-import Avatar1 from '../../../images/avatar/ava1.png'
-import Avatar2 from '../../../images/avatar/ava7.png'
-import Avatar3 from '../../../images/avatar/ava8.png'
-import Avatar4 from '../../../images/avatar/ava4.png'
-import Avatar5 from '../../../images/avatar/ava10.jpg'
-import House1 from '../../../images/reviews/house-1.png'
-import House2 from '../../../images/reviews/house-2.png'
-import House3 from '../../../images/reviews/house-3.png'
-import House4 from '../../../images/reviews/house-4.png'
-import House5 from '../../../images/reviews/house-5.png'
+import Avatar1 from '../../images/avatar/ava1.png'
+import Avatar2 from '../../images/avatar/ava7.png'
+import Avatar3 from '../../images/avatar/ava8.png'
+import Avatar4 from '../../images/avatar/ava4.png'
+import Avatar5 from '../../images/avatar/ava10.jpg'
+import House1 from '../../images/reviews/house-1.png'
+import House2 from '../../images/reviews/house-2.png'
+import House3 from '../../images/reviews/house-3.png'
+import House4 from '../../images/reviews/house-4.png'
+import House5 from '../../images/reviews/house-5.png'
 
 interface ReviewsProps {
   picture: string
@@ -32,7 +32,7 @@ export const reviews: ReviewsProps[] = [
   {
     picture: House2,
     title: 'My house sold out fast!',
-    review: 'I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!',
+    review: 'I was finally able to ready-to-sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!',
     userName: 'Courtney Henry',
     userPosition: 'CEO Andarafish',
     userAvatar: Avatar2,
@@ -49,7 +49,7 @@ export const reviews: ReviewsProps[] = [
   },
   {
     picture: House4,
-    title: 'Best! I got the house I wanted through Hounter',
+    title: 'I got the house I wanted through Hounter',
     review: 'Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.',
     userName: 'Michael Fox',
     userPosition: 'Consulting Associate',

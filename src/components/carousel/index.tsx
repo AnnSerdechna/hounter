@@ -1,5 +1,6 @@
-import {FC, PropsWithChildren} from 'react';
-import {Carousel as CustomCarousel, CarouselProps} from 'antd';
+import { FC, PropsWithChildren } from 'react'
+import { Carousel as CustomCarousel, CarouselProps } from 'antd'
+
 import './index.less'
 
 const settings = {
