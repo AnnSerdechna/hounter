@@ -12,6 +12,7 @@ import { ReactComponent as Bed } from './images/bed.svg'
 import { ReactComponent as Bath } from './images/bath.svg'
 import { ReactComponent as Car } from './images/car.svg'
 import { ReactComponent as Floors } from './images/floors.svg'
+import { ReactComponent as Phone } from './images/phone.svg'
 
 export type IconTypes =
   | 'logo'
@@ -24,6 +25,7 @@ export type IconTypes =
   | 'bath'
   | 'car'
   | 'floors'
+  | 'phone'
   | string
 
 const icons: {
@@ -39,6 +41,7 @@ const icons: {
   car: Car,
   bath: Bath,
   floors: Floors,
+  phone: Phone,
 } as const
 
 type SvgIconProps = SVGProps<SVGSVGElement> & { type: IconTypes }

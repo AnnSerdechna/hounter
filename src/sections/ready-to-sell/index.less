@@ -1,0 +1,59 @@
+@import '../../index';
+
+.ready-to-sell {
+  .ant-list-header {
+    padding-bottom: 16px !important;
+    padding-top: 0 !important;
+    border-bottom: none;
+  }
+
+  .header-list-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: @title-color;
+    opacity: 0.75;
+  }
+
+  .list-item-text {
+    font-family: @ff-primary;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #3C4563;
+  }
+
+  .ant-list-footer {
+    border-top: 2px solid #F0F3FD;
+
+    .ant-card-body {
+      padding: 24px 0;
+
+      .ant-card-meta-title,
+      .ant-card-meta-description {
+        margin-bottom: 0 !important;
+        font-family: @ff-primary;
+        font-weight: 500;
+      }
+      .ant-card-meta-title {
+        font-size: 18px;
+        color: @subtitle-color;
+      }
+      .ant-card-meta-description {
+        font-size: 16px;
+        color: @text-color;
+      }
+    }
+  }
+}
+
+.ready-to-sell-media {
+  position: relative;
+  &-images {
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    right: 0;
+  }
+}
