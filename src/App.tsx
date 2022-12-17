@@ -1,13 +1,14 @@
 import { FC } from 'react'
 
-import {Reviews, Articles, ReadyToSell} from './sections'
+import {Reviews, Articles, ReadyToSell, FeaturedHouse} from './sections'
 
 const App: FC = () => {
   return (
     <>
-      {/*<Reviews />*/}
-      {/*<Articles />*/}
       <ReadyToSell />
+      <FeaturedHouse />
+      <Reviews />
+      <Articles />
     </>
   )
 }
