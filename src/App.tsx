@@ -5,8 +5,8 @@ import {Reviews, Articles, ReadyToSell} from './sections'
 const App: FC = () => {
   return (
     <>
-      <Reviews />
-      <Articles />
+      {/*<Reviews />*/}
+      {/*<Articles />*/}
       <ReadyToSell />
     </>
   )
