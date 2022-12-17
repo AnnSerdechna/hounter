@@ -3,13 +3,14 @@ import { ConfigProvider, Button as CustomButton, ButtonProps } from 'antd'
 
 import './index.less'
 
-const Button: FC<ButtonProps & { colorPrimary?: string, text: string, icon?: ReactNode, type?: string }> = ({ text, icon, type = 'primary' }) => (
+const Button: FC<ButtonProps & { colorPrimary?: string, text?: string, icon?: ReactNode, type?: string, className?: string | undefined }> = ({ text, icon, type = 'primary', disabled = false, className }) => (
   <ConfigProvider
     theme={{
       token: {
         colorPrimary: '#10B981',
         colorBgBase: '#D1FAE5',
         colorTextBase: '#047857',
+        colorBgContainerDisabled: '#E0E3EB',
       },
     }}
   >
@@ -17,8 +18,9 @@ const Button: FC<ButtonProps & { colorPrimary?: string, text: string, icon?: Rea
       shape={'round'}
       size={'large'}
       type={type}
+      disabled={disabled}
       icon={icon}
-      // style={{height: 48, fontSize: '1em'}}
+      className={className}
     >
       {text}
     </CustomButton>

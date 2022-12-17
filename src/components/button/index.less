@@ -3,8 +3,16 @@
 button.ant-btn {
   height: @btn-height !important;
 }
+button.ant-btn.icon-btn {
+  width: 60px !important;
+  height: 52px !important;
+}
+button.ant-btn.tab-btn {
+  height: 52px !important;
+  font-size: 1.4em !important;
+}
 
-button.ant-btn,
+button.ant-btn:not(.ant-btn.icon-btn),
 span {
   display: inline-flex;
   align-items: center;
@@ -12,4 +20,13 @@ span {
   font-family: @ff-primary;
   font-weight: 600;
   font-size: 0.9em
+}
+
+.ant-btn-ghost {
+  color: #888B97;
+  border: 1px solid #E0E3EB;
+}
+
+:where(.css-dev-only-do-not-override-tpni31).ant-btn-primary:disabled {
+  border-color: transparent !important;
 }
