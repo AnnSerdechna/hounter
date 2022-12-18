@@ -1,3 +1,4 @@
+@import '../../index';
 
 .featured-house {
   position: relative;
@@ -12,13 +13,85 @@
   &-title-wrap {
     position: absolute;
     left: 0;
-    top: -3%;
+    top: -2%;
     align-self: center;
   }
+
   .btns-wrap {
     position: absolute;
     right: 0;
     top: 2%;
     align-self: center;
+    z-index: 999;
+  }
+
+  .card {
+    &-image-wrap {
+      position: relative;
+    }
+
+    .category-tag {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      z-index: 100;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 131px;
+      height: 34px;
+      font-family: @ff-primary;
+      font-weight: 500;
+      font-size: 14px;
+      border-radius: 32px;
+      text-transform: capitalize;
+    }
+
+    &-info {
+      margin-top: 24px;
+      padding-left: 20px;
+
+      &-title,
+      &-price {
+        font-family: @ff-primary !important;
+        font-weight: 500 !important;
+        line-height: 32px !important;
+      }
+
+      &-title {
+        margin-bottom: 8px !important;
+        font-size: 24px !important;
+        color: @subtitle-color !important;
+      }
+
+      &-price {
+        font-size: 20px !important;
+        color: #3C4563 !important;
+      }
+    }
+
+    .ant-card-meta-detail {
+      .ant-card-meta-title,
+      .ant-card-meta-description {
+        font-family: @ff-primary;
+        font-weight: 500;
+      }
+
+      .ant-card-meta-title {
+        font-size: 18px;
+        line-height: 24px;
+        color: @subtitle-color;
+      }
+
+      .ant-card-meta-description {
+        font-size: 14px;
+        line-height: 22px;
+        color: @text-color;
+      }
+    }
   }
 }
+
+

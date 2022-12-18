@@ -18,6 +18,8 @@ import { ReactComponent as Phone } from './images/phone.svg'
 import { ReactComponent as Home } from './images/home.svg'
 import { ReactComponent as Villa } from './images/villa.svg'
 import { ReactComponent as Apartment } from './images/apartment.svg'
+import { ReactComponent as Popular } from './images/popular.svg'
+import { ReactComponent as BestDeals } from './images/best-deals.svg'
 
 export type IconTypes =
   | 'logo'
@@ -35,6 +37,8 @@ export type IconTypes =
   | 'home'
   | 'villa'
   | 'apartment'
+  | 'popular'
+  | 'bestDeals'
   | string
 
 const icons: {
@@ -55,6 +59,8 @@ const icons: {
   home: Home,
   villa: Villa,
   apartment: Apartment,
+  popular: Popular,
+  bestDeals: BestDeals,
 } as const
 
 type SvgIconProps = SVGProps<SVGSVGElement> & { type: IconTypes }
