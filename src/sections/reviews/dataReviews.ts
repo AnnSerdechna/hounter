@@ -10,6 +10,7 @@ import House4 from '../../images/reviews/house-4.png'
 import House5 from '../../images/reviews/house-5.png'
 
 interface ReviewsProps {
+  id: number
   picture: string
   title: string
   review: string
@@ -21,6 +22,7 @@ interface ReviewsProps {
 
 export const reviews: ReviewsProps[] = [
   {
+    id: 1,
     picture: House1,
     title: 'Best! I got the house I wanted through Hounter',
     review: 'Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.',
@@ -30,6 +32,7 @@ export const reviews: ReviewsProps[] = [
     rating: 4.6
   },
   {
+    id: 2,
     picture: House2,
     title: 'My house sold out fast!',
     review: 'I was finally able to ready-to-sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!',
@@ -39,6 +42,7 @@ export const reviews: ReviewsProps[] = [
     rating: 4.8
   },
   {
+    id: 3,
     picture: House3,
     title: 'Through the Hounter, I can get a house for my self',
     review: 'By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!',
@@ -48,6 +52,7 @@ export const reviews: ReviewsProps[] = [
     rating: 4.2
   },
   {
+    id: 4,
     picture: House4,
     title: 'I got the house I wanted through Hounter',
     review: 'Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.',
@@ -57,6 +62,7 @@ export const reviews: ReviewsProps[] = [
     rating: 4.1
   },
   {
+    id: 5,
     picture: House5,
     title: 'Family house',
     review: 'By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!',

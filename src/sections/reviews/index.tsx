@@ -12,8 +12,9 @@ const Reviews: FC = () => (
     />
 
     <Carousel>
-      {reviews.map(({ picture, title, review, userName, userPosition, userAvatar, rating }) => (
+      {reviews.map(({ id, picture, title, review, userName, userPosition, userAvatar, rating }) => (
         <ReviewCard
+          key={id}
           src={picture}
           title={title}
           review={review}
