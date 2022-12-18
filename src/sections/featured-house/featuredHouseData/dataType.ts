@@ -1,4 +1,4 @@
-export type FeaturesProps = {
+export type FeaturedHouseDataProps = {
   id: number
   image: string
   homeName: string

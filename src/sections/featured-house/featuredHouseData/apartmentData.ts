@@ -1,4 +1,4 @@
-import {FeaturesProps} from './dataType'
+import {FeaturedHouseDataProps} from './dataType'
 import Home1 from '../../../images/featured-house/apart1.png'
 import Home2 from '../../../images/featured-house/apart2.png'
 import Home3 from '../../../images/featured-house/apart3.png'
@@ -6,7 +6,7 @@ import Home4 from '../../../images/featured-house/apart4.png'
 import Home5 from '../../../images/featured-house/apart5.png'
 import Home6 from '../../../images/featured-house/apart6.png'
 
-export const apartmentData: FeaturesProps[] = [
+export const apartmentData: FeaturedHouseDataProps[] = [
   {
     id: 1,
     image: Home1,

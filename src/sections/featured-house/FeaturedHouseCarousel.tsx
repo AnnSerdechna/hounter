@@ -2,7 +2,7 @@ import {forwardRef, ForwardRefExoticComponent, RefAttributes, RefObject} from 'r
 import {Avatar, Card, Carousel, Col, Image, Typography} from 'antd'
 import {CarouselRef} from 'antd/lib/carousel'
 
-import {FeaturesProps} from './featuredHouseData/dataType'
+import {FeaturedHouseDataProps} from './featuredHouseData'
 import {CategoryTag} from "./CategoryTag";
 
 import './index.less'
@@ -18,13 +18,13 @@ const settings = {
 }
 
 const FeaturedHouseCarousel:
-  ForwardRefExoticComponent<Pick<{ data: FeaturesProps[]; ref: RefObject<CarouselRef>}, "data"> & RefAttributes<CarouselRef>> =
+  ForwardRefExoticComponent<Pick<{ data: FeaturedHouseDataProps[]; ref: RefObject<CarouselRef>}, "data"> & RefAttributes<CarouselRef>> =
   forwardRef(function FeaturedHouseCarousel({ data = [] }, ref) {
     return (
       <Carousel
         ref={ref}
         arrows={true}
-        style={{width: 1500}}
+        style={{width: 1500, height: '80vh'}}
         {...settings}
       >
         {data.map(it => (

@@ -1,6 +1,6 @@
-import {FC} from "react";
-import {Tag} from "antd";
-import {SvgIcon} from "../../components";
+import {FC} from 'react'
+import {Tag} from 'antd'
+import {SvgIcon} from '../../components'
 
 const CategoryTag: FC<{ category: string }> = ({ category }) => {
   const iconType = category === 'popular' ? 'popular' : category === 'new house' ? 'home' : 'bestDeals'
