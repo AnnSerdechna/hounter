@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import {Reviews, Articles, ReadyToSell, FeaturedHouse} from './sections'
+import {Reviews, Articles, ReadyToSell, FeaturedHouse, Footer} from './sections'
 
 const App: FC = () => {
   return (
@@ -9,6 +9,7 @@ const App: FC = () => {
       <FeaturedHouse />
       <Reviews />
       <Articles />
+      <Footer />
     </>
   )
 }

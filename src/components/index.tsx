@@ -1,4 +1,5 @@
 export { SvgIcon } from './icon'
+export { Logo } from './logo'
 export { Button } from './button'
 export { Carousel } from './carousel'
 export { Paragraph } from './paragraph'
