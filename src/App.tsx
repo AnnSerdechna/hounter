@@ -1,16 +1,13 @@
 import { FC } from 'react'
+import {RouterProvider} from 'react-router-dom'
 
-import {Reviews, Articles, ReadyToSell, FeaturedHouse, Footer} from './sections'
+import router from './pages'
+
+const Pages: FC = ( )=> <RouterProvider router={router} />
 
 const App: FC = () => {
   return (
-    <>
-      <ReadyToSell />
-      <FeaturedHouse />
-      <Reviews />
-      <Articles />
-      <Footer />
-    </>
+    <Pages />
   )
 }
 

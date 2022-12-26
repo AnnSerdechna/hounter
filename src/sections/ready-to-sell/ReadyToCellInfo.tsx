@@ -32,6 +32,7 @@ const HouseDetailsListFooter = () => (
       <Button
         icon={<SvgIcon type={'phone'} />}
         text={'Contact Now'}
+        onClick={() => {}}
       />
     </Row>
   </Card>

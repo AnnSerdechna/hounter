@@ -5,20 +5,63 @@ import {Col, Row, Typography, Anchor, Space, List} from 'antd'
 import {Logo, SectionComponent, SvgIcon} from '../../components'
 import './index.less'
 
-const { Paragraph } = Typography
+const { Paragraph, Link } = Typography
 
 const listData = [
   {
     title: 'Property',
-    description: ['House', 'Apartments', 'Villa']
+    description: [
+      {
+        item: 'House',
+        path: 'house',
+      },
+      {
+        item: 'Apartments',
+        path: 'apartments',
+      },
+      {
+        item: 'Villa',
+        path: 'villa',
+      },
+    ]
   },
   {
     title: 'Article',
-    description: ['New Article', 'Popular Article', 'Most Read', 'Tips & Tricks']
+    description: [
+      {
+        item: 'New Article',
+        path: 'new-article',
+      },
+      {
+        item: 'Popular Article',
+        path: 'popular-article',
+      },
+      {
+        item: 'Most Read',
+        path: 'most-read',
+      },
+      {
+        item: 'Tips & Tricks',
+        path: 'tips&tricks',
+      },
+    ]
   },
   {
     title: 'Contact',
-    description: ['2464 Royal Ln. Mesa, New Jersey 45463', '(671) 555-0110', 'info@hounter.com']
+    description: [
+      {
+        item: '2464 Royal Ln. Mesa, New Jersey 45463',
+        type: 'location',
+      },
+      {
+        item: '(671) 555-0110',
+        type: 'tel',
+      },
+      {
+        item: 'info@hounter.com',
+        type: 'email',
+      },
+    ]
   },
 ]
 
@@ -48,10 +91,10 @@ const Footer: FC = () => (
             renderItem={(item) => (
               <List.Item>
                 <List.Item.Meta
-                  title={<a href="https://ant.design">{item.title}</a>}
+                  title={item.title}
                   description={item.description.map(it => (
                     // <Link to={'/'}>{it}</Link>
-                    <p>{it}</p>
+                    <p>{it.item}</p>
                   ))}
                 />
               </List.Item>
