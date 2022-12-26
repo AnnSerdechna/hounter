@@ -1,15 +1,11 @@
-
-
-import React, { FC, memo, Suspense } from 'react'
+import { FC, Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
-import {Footer} from "../../sections";
+
+import {Header, Footer} from '../../sections'
 
 const DefaultLayout: FC = () => (
-  // <Layout className={'default'}>
-  //   <Layout.Header>
-  //     <Header renderMenu={() => <Navigation mode={'horizontal'} items={headerMenu} />} />
-  //   </Layout.Header>
   <>
+    <Header />
     <Suspense fallback={null}>
       <Outlet />
     </Suspense>

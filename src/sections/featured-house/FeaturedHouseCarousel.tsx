@@ -1,9 +1,9 @@
 import {forwardRef, ForwardRefExoticComponent, RefAttributes, RefObject} from 'react'
-import {Avatar, Card, Carousel, Col, Image, Typography} from 'antd'
+import {Avatar, Card, Carousel, Col, Typography} from 'antd'
 import {CarouselRef} from 'antd/lib/carousel'
 
 import {FeaturedHouseDataProps} from './featuredHouseData'
-import {CategoryTag} from "./CategoryTag";
+import {CategoryTag} from './CategoryTag'
 
 import './index.less'
 

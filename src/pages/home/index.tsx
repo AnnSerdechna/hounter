@@ -8,8 +8,8 @@ import {
 
 const Home: FC = () => (
   <>
-    <ReadyToSell />
     <FeaturedHouse />
+    <ReadyToSell />
     <Reviews />
     <Articles />
   </>
