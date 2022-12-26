@@ -4,8 +4,6 @@ import { Col, Row } from 'antd'
 import {SectionTag} from '../section-tag'
 import {SectionTitle} from '../section-title'
 
-type justifyType =  "center" | "start" | "end" | "space-around" | "space-between" | "space-evenly"
-
 const SectionTitleBlock: FC<
   { span?: number,
     sectionName: string,

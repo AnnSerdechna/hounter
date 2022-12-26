@@ -1,5 +1,6 @@
 import {FC} from 'react'
 import {Tag} from 'antd'
+
 import {SvgIcon} from '../../components'
 
 const CategoryTag: FC<{ category: string }> = ({ category }) => {

@@ -1,0 +1,36 @@
+.ant-menu.ant-menu-horizontal {
+  background: transparent !important;
+  border-bottom: 0 !important;
+
+  > .ant-menu-item {
+    padding-left: 12px;
+    padding-right: 12px;
+
+    a {
+      height: 40px;
+      padding: 0 16px;
+      line-height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 32px;
+      text-align: center;
+      font-family: 'Lexend', sans-serif;
+      font-weight: 600 !important;
+      font-size: 14px !important;
+      text-transform: capitalize;
+      color: #F0F3FD;
+      transition: background-color 500ms;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+:where(.css-dev-only-do-not-override-1i536d8).ant-menu-light.ant-menu-horizontal >.ant-menu-item:hover::after {
+  border-width: 0 !important;
+}
+:where(.css-dev-only-do-not-override-1i536d8).ant-menu-light.ant-menu-horizontal >.ant-menu-item::after {
+  border-bottom: 0 !important;
+}

@@ -1,4 +1,5 @@
 import {Avatar, Card, Col, List, Row, Space, Typography} from 'antd'
+
 import {Button, Paragraph, SectionTitleBlock, SvgIcon} from '../../components'
 
 const { Title, Text } = Typography
@@ -30,8 +31,10 @@ const HouseDetailsListFooter = () => (
         description="Manager Director"
       />
       <Button
+        type={'primary'}
         icon={<SvgIcon type={'phone'} />}
         text={'Contact Now'}
+        onClick={() => {}}
       />
     </Row>
   </Card>
