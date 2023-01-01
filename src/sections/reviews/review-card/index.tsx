@@ -35,7 +35,7 @@ const ReviewCard: FC<ReviewCardProps> = ({ src, title, review, userName, userAva
             <Paragraph text={review} />
             <Row justify={'space-between'} className={'card-meta-wrap'}>
               <Card.Meta
-                avatar={<Avatar src={userAvatar} />}
+                avatar={<Avatar src={userAvatar} size={40} />}
                 title={userName}
                 description={userPosition}
               />

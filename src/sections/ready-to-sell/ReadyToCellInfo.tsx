@@ -26,7 +26,7 @@ const HouseDetailsListFooter = () => (
   <Card bordered={false} style={{boxShadow: 'none'}} className={'list-footer'}>
     <Row justify={'space-between'} align={'middle'}>
       <Card.Meta
-        avatar={<Avatar src="https://joeschmoe.io/api/v1/random" />}
+        avatar={<Avatar src="https://www.thestar.com/content/dam/thestar/columnist_logos/francis_angelyn_logo2020.jpg" size={56} />}
         title="Dianne Russell"
         description="Manager Director"
       />

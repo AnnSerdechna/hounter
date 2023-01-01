@@ -6,7 +6,7 @@ import {FeaturedHouseTabs} from './FeaturedHouseTabs'
 import './index.less'
 
 const FeaturedHouse: FC = () => (
-  <SectionComponent maxWidth={1200}>
+  <SectionComponent>
     <Row className={'featured-house'}>
       <Col span={8} className={'featured-house-title-wrap'}>
         <SectionTitleBlock

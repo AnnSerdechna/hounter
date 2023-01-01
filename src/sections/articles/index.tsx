@@ -7,7 +7,7 @@ import {ArticleCrad} from './article-card'
 
 const Articles: FC = () => {
   return (
-   <SectionComponent maxWidth={1200}>
+   <SectionComponent>
      <SectionTitleBlock
        span={9}
        sectionName={'See tips and trick from our partnership'}

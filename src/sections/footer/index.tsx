@@ -74,7 +74,7 @@ const listData: ListDataProps[] = [
 
 const Footer: FC = () => (
   <Row className={'footer'}>
-    <SectionComponent maxWidth={1200}>
+    <SectionComponent>
       <Row justify={'space-between'} style={{width: '100%'}}>
         <Col span={10}>
           <Logo />

@@ -5,7 +5,7 @@ import { ReviewCard } from './review-card'
 import { Carousel, SectionComponent, SectionTitleBlock } from '../../components'
 
 const Reviews: FC = () => (
-  <SectionComponent>
+  <SectionComponent maxWidth={'100%'}>
     <SectionTitleBlock
       sectionName={'See Our Review'}
       title={'What Our User Say About Us'}
