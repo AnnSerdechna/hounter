@@ -12,7 +12,7 @@ const headerMenu: MenuProps['items'] = [
 ]
 
 const Header: FC = () => (
-  <SectionComponent paddingTop={46} paddingBottom={0}>
+  <SectionComponent paddingBottom={0}>
     <Row justify={'space-between'} align={'middle'} className={'header'}>
       <Logo />
       <Space size={56} align={'center'}>
