@@ -11,7 +11,7 @@ const settings = {
   slidesToShow: 2.8,
   slidesToScroll: 1,
   draggable: true,
-  dots: true,
+  dots: false,
 };
 
 const CardComponent: FC<CardMetaProps> = ({ title, description, avatar }) => (
