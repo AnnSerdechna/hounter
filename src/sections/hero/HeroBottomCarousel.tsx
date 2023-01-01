@@ -1,8 +1,9 @@
-import {Avatar, Card, CardProps, Carousel, Col, Row} from 'antd'
+import {Avatar, Card, Col, Row} from 'antd'
 import {FC, ReactNode} from 'react'
 
 import './HeroBottomCarousel.less'
 import {CardMetaProps} from 'antd/es/card'
+import {Carousel} from '../../components'
 
 const settings = {
   infinite: true,
