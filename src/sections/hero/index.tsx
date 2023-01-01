@@ -8,20 +8,9 @@ import {SearchSelect} from '../../components/search-select'
 import HeroBg from './hero-bg.png'
 import './index.less'
 import {Partnership} from '../../components/partnership'
+import {HeroBottomCarousel} from './HeroBottomCarousel'
 
 const { Title } = Typography
-
-console.log(usaStates.length)
-
-const settings = {
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  draggable: true,
-  dots: true,
-};
-
 
 const Hero: FC = () => (
   <>
@@ -58,36 +47,7 @@ const Hero: FC = () => (
         </Col>
       </SectionComponent>
 
-      <Row style={{background: 'teal', width: '100%', marginTop: -100, zIndex: 200}} justify={'end'}>
-        <Col span={11}>
-          <Carousel {...settings}>
-            <Col  span={22} offset={2}>
-              <Card title={'Card title 1'} />
-            </Col>
-            <Col span={22} offset={2}>
-              <Card title={'Card title 2'} />
-            </Col>
-            <Col  span={22} offset={2}>
-              <Card title={'Card title 3'} />
-            </Col>
-            <Col  span={22} offset={2}>
-              <Card>
-                <Card.Meta
-                  title={'1K+ People'}
-                  description={'Successfully Getting Home'}
-                  avatar={(
-                    <Avatar.Group>
-                      <Avatar src={'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80'} />
-                      <Avatar src={'https://images.pexels.com/photos/2467401/pexels-photo-2467401.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'} />
-                      <Avatar src={'https://www.givedirectly.org/wp-content/uploads/2022/11/Adela-in-Rwanda-705x470.png'} />
-                    </Avatar.Group>
-                  )}
-                />
-              </Card>
-            </Col>
-          </Carousel>
-        </Col>
-      </Row>
+     <HeroBottomCarousel />
     </Row>
   </>
 )
