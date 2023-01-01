@@ -5,6 +5,7 @@ import {
   Hero,
   ReadyToSell,
   Reviews,
+  SubscribeNow,
 } from '../../sections'
 
 const Home: FC = () => (
@@ -14,6 +15,7 @@ const Home: FC = () => (
     <ReadyToSell />
     <Reviews />
     <Articles />
+    <SubscribeNow />
   </>
 )
 

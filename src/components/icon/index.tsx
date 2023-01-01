@@ -6,6 +6,7 @@ import { ReactComponent as Twitter } from './images/twitter.svg'
 import { ReactComponent as Instagram } from './images/instagram.svg'
 
 import { ReactComponent as Star } from './images/star.svg'
+import { ReactComponent as Email } from './images/email.svg'
 import { ReactComponent as Clock } from './images/clock.svg'
 import { ReactComponent as NextArrow } from './images/arrow-next.svg'
 import { ReactComponent as Location } from './images/location.svg'
@@ -24,6 +25,7 @@ import { ReactComponent as BestDeals } from './images/best-deals.svg'
 
 export type IconTypes =
   | 'logo'
+  | 'email'
   | 'location'
   | 'facebook'
   | 'twitter'
@@ -47,6 +49,7 @@ const icons: {
   [key: string]: FC<SVGProps<SVGSVGElement>>
 } = {
   logo: Logo,
+  email: Email,
   location: Location,
   facebook: Facebook,
   twitter: Twitter,
