@@ -1,8 +1,3 @@
-import Avatar1 from '../../images/avatar/ava1.png'
-import Avatar2 from '../../images/avatar/ava7.png'
-import Avatar3 from '../../images/avatar/ava8.png'
-import Avatar4 from '../../images/avatar/ava4.png'
-import Avatar5 from '../../images/avatar/ava10.jpg'
 import House1 from '../../images/reviews/house-1.png'
 import House2 from '../../images/reviews/house-2.png'
 import House3 from '../../images/reviews/house-3.png'
@@ -28,7 +23,7 @@ export const reviews: ReviewsProps[] = [
     review: 'Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.',
     userName: 'Dianne Russell',
     userPosition: 'Manager Director',
-    userAvatar: Avatar1,
+    userAvatar: 'https://ychef.files.bbci.co.uk/976x549/p0dnxrcv.jpg',
     rating: 4.6
   },
   {
@@ -38,7 +33,7 @@ export const reviews: ReviewsProps[] = [
     review: 'I was finally able to ready-to-sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!',
     userName: 'Courtney Henry',
     userPosition: 'CEO Andarafish',
-    userAvatar: Avatar2,
+    userAvatar: 'https://media.npr.org/assets/img/2022/11/08/ap22312071681283-0d9c328f69a7c7f15320e8750d6ea447532dff66.jpg',
     rating: 4.8
   },
   {
@@ -48,7 +43,7 @@ export const reviews: ReviewsProps[] = [
     review: 'By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!',
     userName: 'Esther Howard',
     userPosition: 'Head of Marketing',
-    userAvatar: Avatar3,
+    userAvatar: 'https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg?quality=75&width=982&height=726&auto=webp',
     rating: 4.2
   },
   {
@@ -58,7 +53,7 @@ export const reviews: ReviewsProps[] = [
     review: 'Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.',
     userName: 'Michael Fox',
     userPosition: 'Consulting Associate',
-    userAvatar: Avatar4,
+    userAvatar: 'https://media.istockphoto.com/id/1288538088/photo/portrait-young-confident-smart-asian-businessman-look-at-camera-and-smile.jpg?b=1&s=612x612&w=0&k=20&c=r6yIXD9qE6vwqcg3-5iIxL6v3O_lV75oLpDTDQn-o8Y=',
     rating: 4.1
   },
   {
@@ -68,7 +63,7 @@ export const reviews: ReviewsProps[] = [
     review: 'By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!',
     userName: 'Elon musk',
     userPosition: 'CEO Space X',
-    userAvatar: Avatar5,
+    userAvatar: 'https://cdn.britannica.com/05/236505-050-17B6E34A/Elon-Musk-2022.jpg',
     rating: 4.9
   },
 ]

@@ -1,0 +1,32 @@
+@import '../../index';
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+
+  &-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 100vh;
+    object-fit: cover;
+  }
+
+  &-title {
+    font-family: @ff-primary !important;
+    font-weight: 700 !important;
+    font-size: 40px !important;
+    line-height: 50px !important;
+    text-transform: capitalize;
+    color: @title-color !important;
+    -webkit-text-stroke: 1px @title-color;
+
+    &.outlined {
+      color: black;
+      -webkit-text-fill-color: white;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: @title-color;
+    }
+  }
+}

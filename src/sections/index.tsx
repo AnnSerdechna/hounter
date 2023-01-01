@@ -1,4 +1,5 @@
 export { Header} from  './header'
+export { Hero} from  './hero'
 export { FeaturedHouse} from  './featured-house'
 export { Reviews} from  './reviews'
 export { Articles } from  './articles'

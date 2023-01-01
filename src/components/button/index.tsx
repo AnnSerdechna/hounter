@@ -4,7 +4,7 @@ import { ConfigProvider, Button as CustomButton, ButtonProps } from 'antd'
 import './index.less'
 import * as React from "react";
 
-const Button: FC<ButtonProps & { colorPrimary?: string, text?: string, icon?: ReactNode, type?: string, className?: string | undefined, onClick: React.MouseEventHandler<HTMLElement> }> = ({ text, icon, type = 'default', disabled = false, className, onClick }) => (
+const Button: FC<ButtonProps & { colorPrimary?: string, text?: string | ReactNode, icon?: ReactNode, type?: string, className?: string | undefined, onClick: React.MouseEventHandler<HTMLElement> }> = ({ text, icon, type = 'default', disabled = false, className, onClick }) => (
   <ConfigProvider
     theme={{
       token: {

@@ -7,7 +7,7 @@ import { ReadyToSellMedia } from './ReadyToSellMedia'
 import './index.less'
 
 const ReadyToSell: FC = () => (
-  <SectionComponent maxWidth={1200}>
+  <SectionComponent>
     <Row justify={'space-between'}>
       <ReadyToCellInfo />
       <ReadyToSellMedia />
