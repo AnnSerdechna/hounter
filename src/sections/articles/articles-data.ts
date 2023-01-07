@@ -3,11 +3,6 @@ import ArticleImage2 from '../../images/articles/article2.png'
 import ArticleImage3 from '../../images/articles/article3.png'
 import ArticleImage4 from '../../images/articles/article4.png'
 
-import Avatar1 from '../../images/avatar/ava1.png'
-import Avatar2 from '../../images/avatar/ava3.png'
-import Avatar3 from '../../images/avatar/ava6.png'
-import Avatar4 from '../../images/avatar/ava4.png'
-
 export interface ArticlesProps {
   id?: number | undefined
   title: string
