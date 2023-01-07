@@ -46,14 +46,43 @@
       }
     }
   }
+
+  &-media {
+    position: relative;
+    &-images {
+      position: absolute;
+      bottom: 0;
+      left: -50px;
+      right: 0;
+      z-index: 100;
+    }
+  }
 }
 
 .ready-to-sell-media {
   position: relative;
+
   &-images {
     position: absolute;
     bottom: 0;
     left: -50px;
+    right: 0;
+    z-index: 100;
+  }
+}
+
+.ready-to-sell-wrap {
+  position: relative;
+
+  .vector-pink {
+    position: absolute;
+    top: -50%;
+    right: 0;
+  }
+
+  .vector-yellow {
+    position: absolute;
+    top: -20%;
     right: 0;
   }
 }

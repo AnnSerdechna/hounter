@@ -4,6 +4,7 @@ import {Col, Row, Typography, Anchor, Space, List} from 'antd'
 
 import {Logo, SectionComponent, SvgIcon} from '../../components'
 import './index.less'
+import VectorBgBlue from '../../images/bg-vector/footer-blue-vector.svg'
 
 const { Paragraph } = Typography
 const { Link } = Anchor
@@ -74,6 +75,8 @@ const listData: ListDataProps[] = [
 
 const Footer: FC = () => (
   <Row className={'footer'}>
+    <img src={VectorBgBlue} alt={'background'} className={'vector-blue'} />
+
     <SectionComponent>
       <Row justify={'space-between'} style={{width: '100%'}}>
         <Col span={10}>

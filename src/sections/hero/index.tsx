@@ -1,9 +1,7 @@
 import { FC } from 'react'
-import {Row, Col, Typography, Space, Card, Carousel, Avatar} from 'antd'
+import {Row, Col, Typography, Space} from 'antd'
 
-
-import {Paragraph, SectionComponent, SvgIcon} from '../../components'
-import { usaStates } from './statesData'
+import {Paragraph, SectionComponent} from '../../components'
 import {SearchSelect} from '../../components/search-select'
 import HeroBg from './hero-bg.png'
 import './index.less'
@@ -44,7 +42,8 @@ const Hero: FC = () => (
         </Col>
       </SectionComponent>
 
-     <HeroBottomCarousel />
+      <HeroBottomCarousel />
+
     </Row>
   </>
 )
