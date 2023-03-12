@@ -27,8 +27,6 @@ const FeaturedHouseTabs: FC = () => {
     getHouses()
   }, [])
 
-  console.log(houses)
-
   const onNextSlides = () => {
     housesCarousel?.current?.next()
     villasCarousel?.current?.next()
