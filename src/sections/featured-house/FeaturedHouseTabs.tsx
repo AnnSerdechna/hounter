@@ -5,23 +5,23 @@ import {CarouselRef} from 'antd/lib/carousel'
 import {Button, SvgIcon} from '../../components'
 import {FeaturedHouseCarousel} from './FeaturedHouseCarousel'
 import {FeatureHouseCarouselBtns} from './FeatureHouseCarouselBtns'
-import {homesData, villasData, apartmentData, FeaturedHouseDataProps} from './featuredHouseData'
+import {housesData, villasData, apartmentData, FeaturedHouseDataProps} from './featuredHouseData'
 
 const FeaturedHouseTabs: FC = () => {
-  const [activeTab, setActiveTab] = useState('home')
+  const [activeTab, setActiveTab] = useState('house')
 
-  const homesCarousel = useRef<CarouselRef>(null)
+  const housesCarousel = useRef<CarouselRef>(null)
   const villasCarousel = useRef<CarouselRef>(null)
   const apartmentCarousel = useRef<CarouselRef>(null)
 
   const onNextSlides = () => {
-    homesCarousel?.current?.next()
+    housesCarousel?.current?.next()
     villasCarousel?.current?.next()
     apartmentCarousel?.current?.next()
   }
 
   const onPrevSlides = () => {
-    homesCarousel?.current?.prev()
+    housesCarousel?.current?.prev()
     villasCarousel?.current?.prev()
     apartmentCarousel?.current?.prev()
   }
@@ -54,7 +54,7 @@ const FeaturedHouseTabs: FC = () => {
         style={{borderBottom: 0}}
         centered
         items={[
-          getItem('home',  homesData, homesCarousel),
+          getItem('house',  housesData, housesCarousel),
           getItem('villa', villasData, villasCarousel),
           getItem('apartment', apartmentData, apartmentCarousel),
         ]}

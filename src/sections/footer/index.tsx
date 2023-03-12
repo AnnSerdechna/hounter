@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import {FC, Fragment} from 'react'
 import {NavLink} from 'react-router-dom'
 import {Col, Row, Typography, Anchor, Space, List} from 'antd'
 
@@ -104,7 +104,7 @@ const Footer: FC = () => (
                 <List.Item.Meta
                   title={item.title}
                   description={item.description.map(it => (
-                    <>
+                    <Fragment key={it.item}>
                       {it.path && (
                         <NavLink
                           to={it.path}
@@ -128,7 +128,7 @@ const Footer: FC = () => (
                           }
                         />
                       )}
-                    </>
+                    </Fragment>
                   ))}
                 />
               </List.Item>

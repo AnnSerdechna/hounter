@@ -3,9 +3,10 @@ import { FC } from 'react'
 import { reviews } from './dataReviews'
 import { ReviewCard } from './review-card'
 import { Carousel, SectionComponent, SectionTitleBlock } from '../../components'
+import './index.less'
 
 const settings = {
-  className: 'center',
+  className: 'center reviews-carousel',
   centerMode: true,
   infinite: true,
   speed: 500,

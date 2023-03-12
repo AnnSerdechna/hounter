@@ -17,7 +17,7 @@ import { ReactComponent as Car } from './images/car.svg'
 import { ReactComponent as Floors } from './images/floors.svg'
 import { ReactComponent as Phone } from './images/phone.svg'
 
-import { ReactComponent as Home } from './images/home.svg'
+import { ReactComponent as House } from './images/house.svg'
 import { ReactComponent as Villa } from './images/villa.svg'
 import { ReactComponent as Apartment } from './images/apartment.svg'
 import { ReactComponent as Popular } from './images/popular.svg'
@@ -38,7 +38,7 @@ export type IconTypes =
   | 'car'
   | 'floors'
   | 'phone'
-  | 'home'
+  | 'house'
   | 'villa'
   | 'apartment'
   | 'popular'
@@ -62,7 +62,7 @@ const icons: {
   bath: Bath,
   floors: Floors,
   phone: Phone,
-  home: Home,
+  house: House,
   villa: Villa,
   apartment: Apartment,
   popular: Popular,

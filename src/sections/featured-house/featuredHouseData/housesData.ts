@@ -6,7 +6,7 @@ import Home4 from '../../../images/featured-house/house4.png'
 import Home5 from '../../../images/featured-house/house5.png'
 import Home6 from '../../../images/featured-house/house6.png'
 
-export const homesData: FeaturedHouseDataProps[] = [
+export const housesData: FeaturedHouseDataProps[] = [
   {
     id: 1,
     image: Home1,

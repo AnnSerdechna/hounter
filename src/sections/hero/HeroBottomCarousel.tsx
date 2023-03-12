@@ -10,9 +10,11 @@ const settings = {
   speed: 500,
   slidesToShow: 2.8,
   slidesToScroll: 1,
-  draggable: true,
   dots: false,
-};
+  draggable: true,
+  swipe: true,
+  autoplay: true,
+}
 
 const CardComponent: FC<CardMetaProps> = ({ title, description, avatar }) => (
   <Col>
@@ -53,6 +55,7 @@ const HeroBottomCarousel: FC = () => (
       <Carousel {...settings}>
         {data.map(it => (
           <CardComponent
+            key={it.id}
             title={it.title}
             description={it.description}
             avatar={<Avatar size={56} src={it.avatar} />}
