@@ -3,7 +3,7 @@ import { ConfigProvider, Button as AntButton, ButtonProps } from 'antd'
 
 import './index.less'
 
-export const Button: FC<ButtonProps> = ({ children, ...props }) => (
+const Button: FC<ButtonProps> = ({ children, ...props }) => (
   <ConfigProvider
     theme={{
       token: {
@@ -23,4 +23,6 @@ export const Button: FC<ButtonProps> = ({ children, ...props }) => (
     </AntButton>
   </ConfigProvider>
 )
+
+export { Button }
 
