@@ -1,10 +1,9 @@
-import { FC, ReactNode } from 'react'
+import { FC } from 'react'
 import { ConfigProvider, Button as CustomButton, ButtonProps } from 'antd'
 
 import './index.less'
-import * as React from "react";
 
-const Button: FC<ButtonProps & { colorPrimary?: string, text?: string | ReactNode, icon?: ReactNode, type?: string, className?: string | undefined, onClick: React.MouseEventHandler<HTMLElement> }> = ({ text, icon, type = 'default', disabled = false, className, onClick }) => (
+export const Button: FC<ButtonProps> = ({ children, ...props }) => (
   <ConfigProvider
     theme={{
       token: {
@@ -18,15 +17,9 @@ const Button: FC<ButtonProps & { colorPrimary?: string, text?: string | ReactNod
     <CustomButton
       shape={'round'}
       size={'large'}
-      type={type}
-      disabled={disabled}
-      icon={icon}
-      className={className}
-      onClick={onClick}
+      {...props}
     >
-      {text}
+      {children}
     </CustomButton>
   </ConfigProvider>
 )
-
-export { Button }
