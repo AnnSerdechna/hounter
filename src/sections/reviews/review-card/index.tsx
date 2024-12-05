@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { FC } from 'react'
 import { Avatar, Card, Col, Image, Row, Statistic } from 'antd'
 
 import { Paragraph, SvgIcon } from '../../../components'
@@ -14,13 +14,18 @@ type ReviewCardProps = {
   rating: number
 }
 
-const ReviewCard: FC<ReviewCardProps> = ({ src, title, review, userName, userAvatar, userPosition, rating  }) => {
-  const [ellipsis, setEllipsis] = useState(true)
-
+const ReviewCard: FC<ReviewCardProps> = ({ 
+  src, 
+  title, 
+  review, 
+  userName, 
+  userAvatar, 
+  userPosition, 
+  rating  
+}) => {
   return (
     <Col span={22} className={'review'}>
       <Image src={src} />
-
       <Row
         justify={'center'}
         align={'middle'}

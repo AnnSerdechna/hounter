@@ -3,7 +3,7 @@ import {FC, ReactNode} from 'react'
 
 import './HeroBottomCarousel.less'
 import {CardMetaProps} from 'antd/es/card'
-import {Carousel} from '../../components'
+import {Carousel} from '../../components/ui'
 
 const settings = {
   infinite: true,

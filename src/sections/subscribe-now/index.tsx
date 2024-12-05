@@ -1,15 +1,15 @@
 import {FC} from 'react'
-import {Avatar, Col, Row, Typography} from 'antd'
+import {Col, Row, Typography} from 'antd'
 
-import {SectionComponent} from '../../components'
+import {Section} from '../../components'
 import {SubscribeForm} from './SubscribeForm'
-import './index.less'
 import {IconBlockLeft, IconBlockRight} from './IconsBlock'
+import './index.less'
 
 const { Title } = Typography
 
 const SubscribeNow: FC = () => (
-  <SectionComponent>
+  <Section>
     <Row className={'subscribe'}>
       <Col span={6} className={'subscribe-icons-left'}>
         <IconBlockRight />
@@ -25,7 +25,7 @@ const SubscribeNow: FC = () => (
         <IconBlockLeft />
       </Col>
     </Row>
-  </SectionComponent>
+  </Section>
 )
 
 export { SubscribeNow }

@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import { reviews } from './dataReviews'
 import { ReviewCard } from './review-card'
-import { Carousel, SectionComponent, SectionTitleBlock } from '../../components'
+import { Carousel, Section, SectionTitleBlock } from '../../components'
 import './index.less'
 
 const settings = {
@@ -16,28 +16,28 @@ const settings = {
 
 
 const Reviews: FC = () => (
-  <SectionComponent maxWidth={'100%'}>
+  <Section maxWidth={'100%'}>
     <SectionTitleBlock
       sectionName={'See Our Review'}
       title={'What Our User Say About Us'}
     />
 
     <Carousel {...settings}>
-      {reviews.map(({ id, picture, title, review, userName, userPosition, userAvatar, rating }) => (
+      {reviews.map((item) => (
         <ReviewCard
           {...settings}
-          key={id}
-          src={picture}
-          title={title}
-          review={review}
-          userName={userName}
-          userPosition={userPosition}
-          userAvatar={userAvatar}
-          rating={rating}
+          key={item.id}
+          src={item.picture}
+          title={item.title}
+          review={item.review}
+          userName={item.userName}
+          userPosition={item.userPosition}
+          userAvatar={item.userAvatar}
+          rating={item.rating}
         />
       ))}
     </Carousel>
-  </SectionComponent>
+  </Section>
 )
 
 export { Reviews }

@@ -1,11 +1,3 @@
-export { SvgIcon } from './icon'
-export { Logo } from './logo'
-export { Navigation } from './navigation'
-export { Button } from './button'
-export { Carousel } from './carousel'
-export { Paragraph } from './paragraph'
-export { SectionTitle } from './section-title'
-export { SectionTag } from './section-tag'
-export { SectionComponent } from './section-component'
-export { SectionTitleBlock } from './section-title-block'
+export { Footer } from './layout/footer'
+export { Header } from './layout/header'
 

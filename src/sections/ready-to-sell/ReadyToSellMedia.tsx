@@ -5,8 +5,6 @@ import VideoPoster from '../../images/ready-to-sell/poster.png'
 import House1 from '../../images/ready-to-sell/sell1.png'
 import House2 from '../../images/ready-to-sell/sell2.png'
 import House3 from '../../images/ready-to-sell/sell3.png'
-import VectorBgPink from '../../images/bg-vector/pink-vectorsvg.svg'
-import VectorBgLime from '../../images/bg-vector/blue-vector.svg'
 
 const ReadyToSellMedia: FC = () => (
   <Col span={10} className={'ready-to-sell-media'}>

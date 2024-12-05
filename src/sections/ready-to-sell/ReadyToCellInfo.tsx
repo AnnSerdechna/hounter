@@ -1,6 +1,6 @@
 import {Avatar, Card, Col, List, Row, Space, Typography} from 'antd'
 
-import {Button, Paragraph, SectionTitleBlock, SvgIcon} from '../../components'
+import {Button, Paragraph, SectionTitleBlock, SvgIcon} from '../../components/ui'
 
 const { Title, Text } = Typography
 
@@ -33,9 +33,10 @@ const HouseDetailsListFooter = () => (
       <Button
         type={'primary'}
         icon={<SvgIcon type={'phone'} />}
-        text={'Contact Now'}
         onClick={() => {}}
-      />
+      >
+        {'Contact Now'}
+      </Button>
     </Row>
   </Card>
 )

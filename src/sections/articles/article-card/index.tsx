@@ -3,7 +3,6 @@ import { Anchor, Avatar, Card, Col, Image, Row, Typography } from 'antd'
 
 import {Paragraph, SvgIcon} from '../../../components'
 import { ArticlesProps } from '../articles-data'
-
 import './index.less'
 
 const { Link } = Anchor
@@ -13,19 +12,17 @@ type ArticleCardProps = ArticlesProps & {
   cardSpan: number
 }
 
-const ArticleCrad: FC<ArticleCardProps> = (
-  {
-    articleImage,
-    authorAvatar,
-    authorName,
-    title,
-    description,
-    timeToRead,
-    releaseDate,
-    imageSpan,
-    cardSpan
-  }
-) => (
+const ArticleCrad: FC<ArticleCardProps> = ({
+  articleImage,
+  authorAvatar,
+  authorName,
+  title,
+  description,
+  timeToRead,
+  releaseDate,
+  imageSpan,
+  cardSpan
+}) => (
   <Row align={'middle'} style={{marginBottom: 30}} className={'article'}>
     <Col span={imageSpan}>
       <Image src={articleImage} preview={false} />

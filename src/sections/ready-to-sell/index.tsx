@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import {Row} from 'antd'
 
-import { SectionComponent } from '../../components'
+import { Section } from '../../components/ui'
 import { ReadyToCellInfo } from './ReadyToCellInfo'
 import { ReadyToSellMedia } from './ReadyToSellMedia'
 import './index.less'
@@ -12,12 +12,12 @@ const ReadyToSell: FC = () => (
   <Row className={'ready-to-sell-wrap'}>
     <img src={VectorBgPink} alt={'background'} className={'vector-pink'} />
     <img src={VectorBgYellow} alt={'background'} className={'vector-yellow'} />
-    <SectionComponent>
+    <Section>
       <Row justify={'space-between'}>
         <ReadyToCellInfo />
         <ReadyToSellMedia />
       </Row>
-    </SectionComponent>
+    </Section>
   </Row>
 )
 

@@ -17,9 +17,14 @@ const settings = {
   infinite: true,
 }
 
-const FeaturedHouseCarousel:
-  ForwardRefExoticComponent<Pick<{ data: FeaturedHouseDataProps[]; ref: RefObject<CarouselRef>}, "data"> & RefAttributes<CarouselRef>> =
-  forwardRef(function FeaturedHouseCarousel({ data = [] }, ref) {
+type CarouselProps = Pick<{ data: FeaturedHouseDataProps[]; ref: RefObject<CarouselRef> }, "data" > & RefAttributes<CarouselRef>
+
+type FeaturedHouseCarouselProps = ForwardRefExoticComponent<CarouselProps>
+
+const FeaturedHouseCarousel: FeaturedHouseCarouselProps = forwardRef(function FeaturedHouseCarousel(
+  { data = [] }, 
+  ref
+) {
     return (
       <Carousel
         ref={ref}
@@ -28,7 +33,11 @@ const FeaturedHouseCarousel:
         {...settings}
       >
         {data.map(it => (
-          <Col key={it.id} style={{marginRight: 10}} className={'card'}>
+          <Col 
+            key={it.id} 
+            style={{marginRight: 10}} 
+            className={'card'}
+          >
             <Col className={'card-image-wrap'}>
               <Col
                 style={{backgroundImage: `url(${it.image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'contain', height: 382}}

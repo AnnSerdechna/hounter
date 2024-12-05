@@ -1,9 +1,14 @@
 import {Space} from 'antd'
 import {FC} from 'react'
+import { Button, SvgIcon } from '../../components/ui'
 
-import {Button, SvgIcon} from '../../components'
 
-const FeatureHouseCarouselBtns: FC<{ onPrevSlides: () => void, onNextSlides: () => void }> = ({ onPrevSlides, onNextSlides }) => (
+type FeatureHouseCarouselBtns = {
+  onPrevSlides: VoidFunction
+  onNextSlides: VoidFunction
+}
+
+const FeatureHouseCarouselBtns: FC<FeatureHouseCarouselBtns> = ({ onPrevSlides, onNextSlides }) => (
   <Space size={'middle'}>
     <Button
       type={'primary'}

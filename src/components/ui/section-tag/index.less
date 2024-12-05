@@ -1,0 +1,33 @@
+@import '../../../index';
+
+.section-tag {
+  position: relative;
+  font-family: 'Lexend', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  text-transform: capitalize !important;
+  color: @orange-color !important;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 1px;
+    background: @orange-color;
+  }
+
+  &.leftMode::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -30%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 1px;
+    background: @orange-color;
+  }
+}

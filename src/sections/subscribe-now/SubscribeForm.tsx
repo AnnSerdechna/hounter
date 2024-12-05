@@ -1,7 +1,7 @@
 import {Col, Form, Input, Row} from 'antd'
-import {Button, SvgIcon} from '../../components'
 import {FC} from 'react'
 
+import { Button, SvgIcon } from '../../components/ui'
 import './SubscribeForm.less'
 
 const SubscribeForm: FC = () => {
@@ -29,7 +29,9 @@ const SubscribeForm: FC = () => {
 
         <Col span={6}>
           <Form.Item>
-            <Button type={'primary'} htmlType={'submit'} onClick={onReset} text={'Subsribe Now'} />
+            <Button type={'primary'} htmlType={'submit'} onClick={onReset}>
+              {'Subsribe Now'}
+            </Button>
           </Form.Item>
         </Col>
       </Row>

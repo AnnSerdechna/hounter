@@ -1,12 +1,12 @@
 import {FC} from 'react'
 import {Col, Row} from 'antd'
 
-import {SectionComponent, SectionTitleBlock} from '../../components'
+import {Section, SectionTitleBlock} from '../../components'
 import {FeaturedHouseTabs} from './FeaturedHouseTabs'
 import './index.less'
 
 const FeaturedHouse: FC = () => (
-  <SectionComponent>
+  <Section>
     <Row className={'featured-house'}>
       <Col span={8} className={'featured-house-title-wrap'}>
         <SectionTitleBlock
@@ -22,7 +22,7 @@ const FeaturedHouse: FC = () => (
         <FeaturedHouseTabs />
       </Col>
     </Row>
-  </SectionComponent>
+  </Section>
 )
 
 export { FeaturedHouse }

@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Row, Col, List } from 'antd'
 
-import { SectionComponent, SectionTitleBlock } from '../../components'
+import { Section, SectionTitleBlock } from '../../components'
 import { articlesData } from './articles-data'
 import {ArticleCrad} from './article-card'
 
@@ -15,7 +15,7 @@ const Articles: FC = () => {
     <img src={VectorBgBlue} alt={'background'} className={'vector-blue'} />
     <img src={VectorBgLime} alt={'background'} className={'vector-lime'} />
 
-    <SectionComponent>
+    <Section>
       <SectionTitleBlock
         span={9}
         sectionName={'See tips and trick from our partnership'}
@@ -62,7 +62,7 @@ const Articles: FC = () => {
           ))}
         </Col>
       </Row>
-    </SectionComponent>
+    </Section>
   </Row>
   )
 }
