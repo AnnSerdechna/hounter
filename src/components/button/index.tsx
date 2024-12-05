@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { ConfigProvider, Button as CustomButton, ButtonProps } from 'antd'
+import { ConfigProvider, Button as AntButton, ButtonProps } from 'antd'
 
 import './index.less'
 
@@ -14,12 +14,13 @@ export const Button: FC<ButtonProps> = ({ children, ...props }) => (
       },
     }}
   >
-    <CustomButton
+    <AntButton
       shape={'round'}
       size={'large'}
       {...props}
     >
       {children}
-    </CustomButton>
+    </AntButton>
   </ConfigProvider>
 )
+
